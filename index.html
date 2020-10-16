@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="question();">
+    <div class="quiz-container">
+        <h2 class="question">
+            <span id="question"></span>
+            <hr>
+        </h2>
+            
+        <p><input type="radio" class="input" value="a" name="answer"><label id="choice-a" onclick="mark(0);"></label></p>
+        <p><input type="radio" class="input" value="b" name="answer"><label id="choice-b" onclick="mark(1);"></label></p>
+        <p><input type="radio" class="input" value="c" name="answer"><label id="choice-c" onclick="mark(2);"></label></p>
+        <p><input type="radio" class="input" value="d" name="answer"><label id="choice-d" onclick="mark(3);"></label></p>
+            
+        <button class="button" onclick="checkValid(); question();">Submit</button>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
