@@ -184,7 +184,7 @@ function question()
 {
     questionNum = Math.floor(Math.random() * quizList.length);
     if (number > 9) {
-        alert("You have finished the quiz, you have big PP energy.\n" + "Correct: " + correct + "\nIncorrect: " + incorrect);
+        alert("You have finished the quiz, go grab a soda.\n" + "Correct: " + correct + "\nIncorrect: " + incorrect);
         refreshGame();
         loadQuestion(questionNum);
     }
